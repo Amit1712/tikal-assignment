@@ -1,0 +1,35 @@
+.character-card-wrapper {
+    display        : flex;
+    flex-direction : column;
+    max-width      : 250px;
+    align-items    : center;
+    justify-content: center;
+    padding        : 15px;
+    box-shadow     : 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+    border-radius  : 0.5rem;
+    margin         : auto;
+}
+
+.character-card-wrapper:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-header img {
+    max-width: 250px;
+}
+
+.card-header .name {
+    font-size  : 26px;
+    font-weight: 500;
+}
+
+.card-body {
+    width: -webkit-fill-available;
+}
+
+.card-body .txt {
+    font-size      : 18px;
+    color          : #767676;
+    display        : flex;
+    justify-content: space-between;
+}
