@@ -47,21 +47,23 @@ const CharacterDisplay = () => {
 
   return (
     Object.keys(characterData).length > 0 && (
-      <div className="character-card-wrapper">
-        <div className="card-header">
-          <img src={characterData.image} alt="avatar-pic" />
-          <div className="name">{characterData.name}</div>
-        </div>
-        <div className="card-body">
-          <div className="txt">
-            <div className="label">Origin: </div> {characterData.origin.name}
+      <div id={characterData.id}>
+        <div className="character-card-wrapper">
+          <div className="card-header">
+            <img src={characterData.image} alt="avatar-pic" />
+            <div className="name">{characterData.name}</div>
           </div>
-          <div className="txt">
-            <div className="label">Dimension: </div> {locationData.dimension}
-          </div>
-          <div className="txt">
-            <div className="label">Popularity: </div>
-            {characterData.episode.length}
+          <div className="card-body">
+            <div className="txt">
+              <div className="label">Origin: </div> {characterData.origin.name}
+            </div>
+            <div className="txt">
+              <div className="label">Dimension: </div> {locationData.dimension}
+            </div>
+            <div className="txt">
+              <div className="label">Popularity: </div>
+              {characterData.episode.length}
+            </div>
           </div>
         </div>
       </div>

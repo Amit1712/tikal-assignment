@@ -27,17 +27,6 @@ const BarChart = () => {
         const chart = document.createElement("div");
         //create the chart canvas
         const barchart = document.createElement("table");
-        //create the title row
-        const titlerow = document.createElement(CHART_INFO_JSON.trow);
-        //create the title chartData
-        const titledata = document.createElement(CHART_INFO_JSON.td);
-        //make the colspan to number of records
-        titledata.setAttribute("colspan", chartData.length + 1);
-        titledata.setAttribute("class", "charttitle");
-        titledata.innerText = CHART_INFO_JSON.title;
-        titlerow.appendChild(titledata);
-        barchart.appendChild(titlerow);
-        chart.appendChild(barchart);
 
         //create the bar row
         const barrow = document.createElement(CHART_INFO_JSON.trow);

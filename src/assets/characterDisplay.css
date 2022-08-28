@@ -7,7 +7,6 @@
     padding        : 15px;
     box-shadow     : 0 2px 2px 0 rgba(0, 0, 0, 0.14);
     border-radius  : 0.5rem;
-    margin         : auto;
 }
 
 .character-card-wrapper:hover {
@@ -16,11 +15,13 @@
 
 .card-header img {
     max-width: 250px;
+    border-radius: 0.5rem;
 }
 
 .card-header .name {
     font-size  : 26px;
     font-weight: 500;
+    text-align: center;
 }
 
 .card-body {

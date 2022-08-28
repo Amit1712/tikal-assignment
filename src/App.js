@@ -1,14 +1,28 @@
 import "./assets/App.css";
 import BarChart from "./components/BarChart";
 import CharacterDisplay from "./components/CharacterDisplay";
+import BrandLogo from './assets/brand-logo.js';
 
 function App() {
   return (
     <div className="App">
-      <h1>Part 1 - Who is the most unpopular being from Earh C-137?</h1>
-      <CharacterDisplay />
-      <h1>Part 2 - Bar chart</h1>
-      <BarChart />
+      <div className="header">
+        <div className="brand-logo">
+          <BrandLogo />
+        </div>
+      </div>
+      <div className="content">
+        <div className="col">
+          <div className="title">
+            Who is the most unpopular character from Earh C-137?
+          </div>
+          <CharacterDisplay />
+        </div>
+        <div className="col">
+          <div className="title">Smith' Family Popularity</div>
+          <BarChart />
+        </div>
+      </div>
     </div>
   );
 }
